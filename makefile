@@ -16,4 +16,7 @@ $(PROG).o: $(PROG).c
 clean:
 	rm -f $(PROG).o $(PROG)
 
+test: $(PROG)
+	./$(PROG) -s websh:h1
+
 .PHONY: all clean
